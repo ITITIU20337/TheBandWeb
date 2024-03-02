@@ -43,13 +43,13 @@ html {
     background-color: #fff;
 }
 #nav .subnav a {
-    color: #000
+    color: black;
     padding: 0 12px; 
     line-height: 38px;
 }
 #nav, .subnav{
     list-style-type: none;
-    background-color: #fff
+    background-color: #000;
     position: absolute;
 }
 #nav > li{
