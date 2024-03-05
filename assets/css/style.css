@@ -24,34 +24,50 @@ html {
 #main{
 
 }
+#nav{
+    display: inline-block;
+}
+#nav .ti-angle-down {
+    font-size: 13px;
+    
+}
+#nav, .subnav{
+    list-style-type: none;
+}
 
 #header{
  /* Width = main
     Height = check
      */
+    right: 0;
+    left: 0;
     height: 46px;
-    background-color: black
+    background-color: black;
+    position: fixed;
+    top: 0;
+
 /* Ngoài xong  */
 }
 #nav{
+    display: inline-block;
 
 }
 #nav .subnav{
-    
+    min-width: 160px;
+    display: none;
     position: absolute;
-    color: grey;
+    top: 100%;
+    left: 0;
     background-color: #fff;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
 #nav .subnav a {
-    color: black;
+    color: #000;
     padding: 0 12px; 
     line-height: 38px;
+    
 }
-#nav, .subnav{
-    list-style-type: none;
-    background-color: #000;
-    position: absolute;
-}
+
 #nav > li{
     display: inline-block
 }
@@ -60,28 +76,69 @@ html {
     text-transform: uppercase;
 }
 
-#nav .subnav li:hover a, 
-#nav > li:hover > a {
-    color: black;
+
+#nav > li:hover > a { 
+    color: black; ;
     background-color: white;
+   
+}
+#nav .subnav li:hover a{
+    color: white;
+    background-color: black;
+    text-decoration-style: none;
+
 }
 
 #nav li{
     position: relative;
 }
+#nav li:hover .subnav {
+    display: block;
+}
+
+#header .ti-search {
+    color: white;
+    font-size: 14px;
+    display: inline-block;
+    
+
+}
+#header .search-btn{
+    float: right;
+    padding: 0 24px;
+    line-height: 46px;
+    
+}
+
+#header .search-btn:hover{
+    background-color: orange;
+    cursor: pointer;
+}
+
+
 
 #nav li a {
-    color:white;
     text-decoration: none;
+    
     line-height: 46px;
     padding: 0 24px;
     display: block;
+
 }
 #slider{
     min-height: 500px;
-
-    background-color: grey;
+    margin-top: 46px;
+    background: url('/assets/img/bg-img.jpeg') no-repeat center center;
+    background-color: white;
     
+}
+#slider .content{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: white;
+    text-align: center;
 }
 #content{
 
