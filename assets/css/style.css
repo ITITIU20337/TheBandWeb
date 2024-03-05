@@ -16,7 +16,10 @@
 3. Mau sac
 4. Kieu dang ( kiểu chữ)
  */
+.clear{
+    clear: both;
 
+}
 html {
     font-family: Arial, sans-serif;
 }
@@ -35,8 +38,9 @@ html {
     list-style-type: none;
 }
 
+
 #header{
- /* Width = main
+ /* Width = main    
     Height = check
      */
     right: 0;
@@ -129,6 +133,7 @@ html {
     margin-top: 46px;
     background: url('/assets/img/bg-img.jpeg') no-repeat center center;
     position: relative;
+    background-size: cover;
 }
 
 #slider .text-content{
@@ -217,8 +222,26 @@ html {
     width: 250px;
     height:200px;
 }
-#content .content-section {
-    background: black;
+#content .tour-section{
+    background-color: #000 ;
+    height: 500px;  
+}
+.tour-section .content-section{
+    color: white;
+}
+.tour-section .tour-dates{
+    background-color: white;
+    
+    margin: 30px;   
+}
+.tour-dates .tour-item{
+    display: block;
+    
+    color: black;
+    border: 0.5px solid grey;
+    top: 50%;
+    font-size: 12px;
+    text-align:50px left;
 }
 #footer{
 
