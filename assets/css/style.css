@@ -238,10 +238,10 @@ html {
     display: block;
     
     color: black;
-    border: 0.5px solid grey;
+    border: 1px 
     top: 50%;
     font-size: 12px;
-    text-align:50px left;
+    text-align: left;
 }
 #footer{
 
